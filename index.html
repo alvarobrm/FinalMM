@@ -22,7 +22,7 @@
 <body>
 
   	<nav>
-    <div class="nav-wrapper cyan darken-1">
+    <div class="nav-wrapper red darken-4">
       <a href="#" class="brand-logo">Logo</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
@@ -48,6 +48,64 @@
 	</div>
 
   	<i class="medium material-icons ">polymer</i>
+
+
+  	<div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/sample-1.jpg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/sample-1.jpg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/sample-1.jpg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <select >
+  		  <option value="" disabled selected>Choose your option</option>
+  		  <option value="1">Option 1</option>
+  		  <option value="2">Option 2</option>
+  		  <option value="3">Option 3</option>
+  		</select>
 	
 </body>
 </html>
@@ -55,5 +113,6 @@
 <script type="">
 	$( document ).ready(function(){
 		$(".button-collapse").sideNav();
+		$('select').material_select();
 	})
 </script>
