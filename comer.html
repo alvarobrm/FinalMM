@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Index</title>
+    <meta charset="utf-8">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <!--jQuery-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--MDL-->
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/gandia.css">
+
+    <!--Progress Bar-->
+    <script src='js/nprogress.js'></script>
+    <link rel='stylesheet' href='css/nprogress.css' />
+    <style>
+        #map {
+            width: 500px;
+            height: 400px;
+            display:none;
+        }
+    </style>
+
+</head>
+<script type="text/javascript">
+    NProgress.start();
+</script>
+<script>
+        function initMap() {
+            var mapDiv = document.getElementById('map');
+            var map = new google.maps.Map(mapDiv, {
+                center: {
+                    lat: 40.3308966,
+                    lng: -3.8845258
+                },
+                zoom: 16
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+    <script type="text/javascript">
+function mostrar(){
+document.getElementById('map').style.display = 'block';}
+</script>
+<body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper grey darken-4 ">
+                <a href="index.html" class="brand-logo"><img class="logo" src="logo.png">
+                </a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li class="waves-effect waves-green"><a href="#noscroll" id="mute"onclick="cambiar()"><i id="prueba"class="material-icons prefix">volume_off</i></a>
+                    </li>
+                    <li class="waves-effect waves-green"><a href="visitar.html"id="menu">¿Que visitar?</a>
+                    </li>
+                    <li class="waves-effect waves-green"><a href="comer.html"id="menu">¿Donde comer?</a>
+                    </li>
+                    <li class="waves-effect waves-green"><a href="contacta.html"id="menu">Contacta</a>
+                    </li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="visitar.html">¿Que visitar?</a>
+                    </li>
+                    <li><a href="comer.html">¿Donde comer?</a>
+                    </li>
+                    <li><a href="contacta.html">Contacta</a>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    </div>
+
+       <audio id="background_audio" autoplay="autoplay">
+        <source src="song.mp3" />
+    </audio>
+
+
+    <script type="text/javascript">
+        var audio = document.getElementById('background_audio');
+
+        document.getElementById('mute').addEventListener('click', function (e) {
+            e = e || window.event;
+            
+            audio.muted = !audio.muted;
+            e.preventDefault();
+        }, false);
+        function cambiar()
+{
+    if(document.getElementById('prueba').innerHTML == "volume_off"){
+        document.getElementById('prueba').innerHTML = "volume_up";}
+    else{
+    document.getElementById('prueba').innerHTML = "volume_off";
+    }
+}
+        
+    </script>
+
+    <div class="section white">
+        <div class="row container">
+            <h2 class="header">¿Que comer?</h2>
+            <div class="row">
+                <div class="col s12 l4 medium">
+
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/telero.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Restaurante Telero<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">This is a link</a>
+                            </p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Restaurante Telero<i class="material-icons right">close</i></span>                      <br>
+                            <p>Agradable visita a precio razonable.
+El trato es muy amigable con un servicio profesional y esmerado. Nada criticable en exceso y como único "pero" nuestra mesa era algo pequeña. Decoración reducida, nada cargada y correcta. El ambiente del local es sereno.
+Hemos acudido unas cuantas veces y en nuestra última visita a mediados del mes de diciembre sólo puedo decir que todas nuestras buenas perspectivas se han conformado. Calidad y servicio garantizados.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col s12 l4 medium">
+
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/taula.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Resturante Taula<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#">This is a link</a>
+                            </p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Restaurante Taula<i class="material-icons right">close</i></span>                        <br>
+                            <p>Un producto de excelente calidad y una elaboración con toda la excelencia de la cocina tradicional y la creatividad de la cocina moderna que logran un maravilloso resultado para el paladar.
+Muy alejado de los restaurantes cazaturistas, en La Taula encontrará una de las mejores ofertas gastronómicas a un precio más que ajustado.
+Espacio gastronómico para paladares exigentes que no angustia al bolsillo. Visita La Taula y descubre la verdadera cocina.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col s12 l4 medium">
+
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/vallier.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Restaurante Vallier<i class="material-icons right">more_vert</i></span>
+                            <p><a href="mapa.html" target="_blank">Enlace</a>¿DONDE ESTA?</a>
+                            </p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Restaurante Vallier<i class="material-icons right">close</i></span>
+                           <br> <p>Destacan sus carnes de buey y los productos de oca y pato, y también sus arroces caseros y postres. Los sabores de la cocina asiática, los platos mejicanos y árabes siempre tienen cabina en su cocina
+A Vallier, situado en la zona Raval-Prado de Gandía, se ha convertido en un referente gastronómico por su calidad, ambiente familiar y buen servicio. Abierto en 2003 y regentado por Javier Peiró, ofrece, con una decoración moderna y minimalista, cocina de picaeta con sabores innovadores y platos tradicionales. Destacan sus carnes de buey y los productos de oca y pato, y también sus arroces caseros y postres. La cocina de A Vallier se ve claramente marcada por su gusto por los sabores y texturas extranjeras, adquiridas en sus viajes y su extensa biblioteca culinaria. El gusto por la cocina viene dado por una tradición familiar de más de 100 años. Los sabores de la cocina asiática (hindú, paquistaní, china), los platos mejicanos y árabes siempre tienen cabina en su cocina </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <h4>Modal Header</h4>
+                        AQUI IRIA EL MAPAAAA
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                    </div>
+                </div>
+
+
+<div id="map"></div>
+            </div>
+        </div>
+    </div>
+   
+    
+
+    <footer class="page-footer grey darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a>
+                        </li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a>
+                        </li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a>
+                        </li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<script type="">
+
+    $( document ).ready(function(){ NProgress.done(); $(".button-collapse").sideNav(); $('.parallax').parallax(); $('.slider').slider({full_width: true}); $('.modal-trigger').leanModal();})
+</script>

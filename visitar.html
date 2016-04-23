@@ -34,26 +34,26 @@
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper grey darken-4 ">
-                <a href="#" class="brand-logo">Logo</a>
+                <a href="index.html" class="brand-logo"><img class="logo" src="logo.png">
+                </a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="visitar.html">¿Que visitar?</a>
+                    <li class="waves-effect waves-green"><a href="#noscroll" id="mute"onclick="cambiar()"><i id="prueba"class="material-icons prefix">volume_off</i></a>
                     </li>
-                    <li><a href="badges.html">Components</a>
+                    <li class="waves-effect waves-green"><a href="visitar.html"id="menu">¿Que visitar?</a>
                     </li>
-                    <li><a href="collapsible.html">Javascript</a>
+                    <li class="waves-effect waves-green"><a href="comer.html"id="menu">¿Donde comer?</a>
                     </li>
-                    <li><a href="mobile.html">Mobile</a>
+                    <li class="waves-effect waves-green"><a href="contacta.html"id="menu">Contacta</a>
                     </li>
+
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
                     <li><a href="visitar.html">¿Que visitar?</a>
                     </li>
-                    <li><a href="badges.html">Components</a>
+                    <li><a href="comer.html">¿Donde comer?</a>
                     </li>
-                    <li><a href="collapsible.html">Javascript</a>
-                    </li>
-                    <li><a href="mobile.html">Mobile</a>
+                    <li><a href="contacta.html">Contacta</a>
                     </li>
                 </ul>
             </div>
@@ -62,13 +62,39 @@
 
     </div>
 
+    <audio id="background_audio" autoplay="autoplay">
+        <source src="song.mp3" />
+    </audio>
+
+
+    <script type="text/javascript">
+        var audio = document.getElementById('background_audio');
+
+        document.getElementById('mute').addEventListener('click', function (e) {
+            e = e || window.event;
+            
+            audio.muted = !audio.muted;
+            e.preventDefault();
+        }, false);
+        function cambiar()
+{
+    if(document.getElementById('prueba').innerHTML == "volume_off"){
+        document.getElementById('prueba').innerHTML = "volume_up";}
+    else{
+    document.getElementById('prueba').innerHTML = "volume_off";
+    }
+}
+        
+    </script>
+    
+     <iframe id="reproductor"class="youtube-player" type="text/html"  src="http://www.youtube.com/embed/fn2QX6aKV4s" frameborder="0"></iframe>
 
     <div class="section white">
         <div class="row container">
-            <h2 class="header">¿Que visitar?</h2> 
+            <h2 class="header">¿Que visitar?</h2>
             <div class="row">
                 <div class="col s12 l4 medium">
-                    
+
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="images/ducal.jpg">
@@ -80,7 +106,8 @@
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4">Palacio Ducal<i class="material-icons right">close</i></span>
-                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            <br>
+                            <p>Entre los monumentos más importantes de la ciudad de Gandía destaca el Palacio Ducal, que ha sido objeto de numerosas restauraciones. Es una importante muestra de palacio del gótico civil valenciano. Casa natalicia de San Francisco de Borja. Destaca el Patio de Armas, gótico y la Galería Dorada, del s. XVII, con azulejos originales de la época. Está considerado una de las mansiones señoriales más importantes de la Corona de Aragón. La habitación de Francisco de Borja se conserva prácticamente tal y como estaba en aquel entonces y no se permite pisarla, solo puede verse desde fuera.</p>
                         </div>
                     </div>
                     <div class="card">
@@ -94,10 +121,11 @@
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4">Discotecas<i class="material-icons right">close</i></span>
-                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            <br>
+                            <p>Gandia cuenta con un sin fin de pubs y varias disotecas. Las discotecas más grandes se encuentran en la playa de Gandia. Tanto la playa de Gandia como la ciudad disponen de discotecas para pasar una buena noche de fiesta. Las discotecas abren sus puertas todos los fines de semana y vísperas de festivos (en verano abren todos los días). Hay música para todos los gustos en los diferentes lugares. Si te gusta la fiesta, la música, bailar y conocer a gente éste es tu sitio.</p>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="col s12 l4 medium">
 
@@ -112,7 +140,8 @@
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4">El Racó del Duc<i class="material-icons right">close</i></span>
-                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            <br>
+                            <p>El Rincón del Duque, también conocido como el barranco del Infierno, es el tramo del río de Alcoi o Serpis comprendido entre Villalonga y Lorcha, donde el río atraviesa un impresionante desfiladero limitado por las sierras de la Safor (1.013 m ) y la Cuta (680 m). La ruta discurre por la antigua plataforma del desmantelado ferrocarril Alcoy-Grau de Gandia , pendiente de ser catalogada como vía verde. A pesar de su distancia , se trata de una ruta con suaves pendientes, casi inapreciables, sencilla y muy accesible para visitar a pie o en bicicleta de montaña. Estas características definen la ruta como una de las más conocidas, visitadas y queridas en la Safor.</p>
                         </div>
                     </div>
                     <div class="card">
@@ -125,8 +154,9 @@
                             </p>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            <span class="card-title grey-text text-darken-4">Murallas<i class="material-icons right">close</i></span>
+                            <br>
+                            <p>Las Murallas de Gandía, aunque prácticamente desaparecidas casi en su totalidad, sus restos se encuentran catalogados como Bien de interés cultural según consta en la Dirección General de Patrimonio Cultural de la Consejería de Turismo, Cultura y Deporte de la Generalidad Valenciana, con número de anotación ministerial: R-I-51-0010759 y fecha de anotación 24 de abril de 2002.</p>
                         </div>
                     </div>
                 </div>
@@ -143,7 +173,8 @@
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4">Playas<i class="material-icons right">close</i></span>
-                            <p>Gandia tiene más de 7 Km de playa divide en varios tramos. La playa nort, dónde se encuentran todos los apartamentos y hoteles de la playa de Gandia es la más famosa y la preferida. </p>
+                            <br>
+                            <p>Los 7,5 km de playa se dividen en varios tramos. La más conocida es la Playa Nort dónde se encuentran la mayoría de hoteles de la playa de Gandia y los apartamentos. Aquí encontrarás también chiringuitos para tomarte algo. También hay playas tranquilas sin edificaciónes pero con dunas y vistas impresionantes desde dónde podrás ver las montañas desde el agua. </p>
                         </div>
                     </div>
                 </div>
@@ -154,24 +185,26 @@
                             <img class="activator" src="images/ruta1.jpg">
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Ruta Verde Parpalló – Borrell<i class="material-icons right">more_vert</i></span>
+                            <span class="card-title activator grey-text text-darken-4">Ruta Parpalló – Borrell<i class="material-icons right">more_vert</i></span>
                             <p><a href="#">This is a link</a>
                             </p>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Ruta Verde Parpalló – Borrell<i class="material-icons right">close</i></span>
+                            <span class="card-title grey-text text-darken-4">Ruta Parpalló – Borrell<i class="material-icons right">close</i></span>
+                            <br>
                             <p>Se inicia en La Drova. Para acceder a La Drova, tomaremos la carretera de Gandia a Barx, encontrando fácilmente la cueva del Parpalló, que le da nombre a este paraje. A esta zona se puede llegar en coche, en bici o andando y puede convertirse en una excursión muy interesante para los amantes de la espeleología.</p>
                         </div>
                     </div>
                 </div>
 
-                
 
-               
+
+
             </div>
         </div>
     </div>
-    
+
+   
 
     <footer class="page-footer grey darken-4">
         <div class="container">
