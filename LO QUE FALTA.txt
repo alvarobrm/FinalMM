@@ -11,3 +11,8 @@ EXCEL A
 EXCEL AA
 -1.2.5 (pa lo ultimo) 
 -3.3.3 Sugerencias de error en formulario e indicar si el campo es obligatorio o indicar tipo de dato a introducir
+-Musica de fondo              V
+-Cambiar boton de musica segun conveniencia V
+-Waves al menu de arriba      V
+-Boton aumentar tamaño letras X
+- Buscar im‡genes grandes	X
