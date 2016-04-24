@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
-    <title>Index</title>
+    <title>Pagina Que comer de sitio turistico Gandia</title>
     <meta charset="utf-8">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
@@ -55,15 +55,14 @@ function mostrar(){
 document.getElementById('map').style.display = 'block';}
 </script>
 <body>
-    <div class="navbar-fixed">
+    <div class="navbar-fixed"role="navigation">
         <nav>
             <div class="nav-wrapper grey darken-4 ">
-                <a href="index.html" class="brand-logo"><img class="logo" src="logo.png">
+                <a href="index.html" class="brand-logo"role="banner"><img class="logo" src="logo.png">
                 </a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li class="waves-effect waves-green"><a href="#noscroll" id="mute"onclick="cambiar()"><i id="prueba"class="material-icons prefix">volume_off</i></a>
-                    </li>
+                    
                     <li class="waves-effect waves-green"><a href="visitar.html"id="menu">¿Que visitar?</a>
                     </li>
                     <li class="waves-effect waves-green"><a href="comer.html"id="menu">¿Donde comer?</a>
@@ -85,32 +84,8 @@ document.getElementById('map').style.display = 'block';}
 
     </div>
 
-       <audio id="background_audio" autoplay="autoplay">
-        <source src="song.mp3" />
-    </audio>
 
-
-    <script type="text/javascript">
-        var audio = document.getElementById('background_audio');
-
-        document.getElementById('mute').addEventListener('click', function (e) {
-            e = e || window.event;
-            
-            audio.muted = !audio.muted;
-            e.preventDefault();
-        }, false);
-        function cambiar()
-{
-    if(document.getElementById('prueba').innerHTML == "volume_off"){
-        document.getElementById('prueba').innerHTML = "volume_up";}
-    else{
-    document.getElementById('prueba').innerHTML = "volume_off";
-    }
-}
-        
-    </script>
-
-    <div class="section white">
+    <div class="section white"role="main">
         <div class="row container">
             <h2 class="header">¿Que comer?</h2>
             <div class="row">
@@ -118,7 +93,7 @@ document.getElementById('map').style.display = 'block';}
 
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="images/telero.jpg">
+                            <img class="activator" src="images/telero.jpg"alt="imagencartacomer1">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Restaurante Telero<i class="material-icons right">more_vert</i></span>
@@ -139,7 +114,7 @@ Hemos acudido unas cuantas veces y en nuestra última visita a mediados del mes 
 
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="images/taula.jpg">
+                            <img class="activator" src="images/taula.jpg"alt="imagencartacomer2">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Resturante Taula<i class="material-icons right">more_vert</i></span>
@@ -159,7 +134,7 @@ Espacio gastronómico para paladares exigentes que no angustia al bolsillo. Visi
 
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="images/vallier.jpg">
+                            <img class="activator" src="images/vallier.jpg"alt="imagencartacomer3">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Restaurante Vallier<i class="material-icons right">more_vert</i></span>
@@ -194,7 +169,7 @@ A Vallier, situado en la zona Raval-Prado de Gandía, se ha convertido en un ref
    
     
 
-    <footer class="page-footer grey darken-4">
+    <footer class="page-footer grey darken-4"role="contentinfo">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
@@ -204,14 +179,14 @@ A Vallier, situado en la zona Raval-Prado de Gandía, se ha convertido en un ref
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text">Links</h5>
                     <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a>
-                        </li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a>
-                        </li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a>
-                        </li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a>
-                        </li>
+                        <li><a class="grey-text text-lighten-3" href="index.html">Pagina principal</a>
+                            </li>
+                            <li><a class="grey-text text-lighten-3" href="visitar.html">¿Que visitar?</a>
+                            </li>
+                            <li><a class="grey-text text-lighten-3" href="comer.html">¿Que comer?</a>
+                            </li>
+                            <li><a class="grey-text text-lighten-3" href="contacta.html">Contacta</a>
+                            </li>
                     </ul>
                 </div>
             </div>
