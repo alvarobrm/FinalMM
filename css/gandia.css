@@ -26,3 +26,25 @@ width:550px;
     margin-left: 400px;
     
 }
+
+
+.card-image{
+	height: 15em !important;
+}
+
+.carousel-item img{
+	height: 7em;
+}
+
+.visor{
+	height: 500px;
+	border-color: black;
+	border: solid;
+	border-width: 2px;
+	background-repeat: no-repeat;
+	margin-top: -200px;
+}
+
+.carousel{
+	margin-top: -100px !important;
+}

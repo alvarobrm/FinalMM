@@ -7,3 +7,4 @@
 -Cambiar boton de musica segun conveniencia V
 -Waves al menu de arriba      V
 -Boton aumentar tamaño letras X
+- Buscar im‡genes grandes	X
