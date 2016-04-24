@@ -1,0 +1,9 @@
+-PHP para enviar postal       X
+-Mapas en restaurantes        X
+-Conenido e informacion buena V
+-Arreglar menu de arriba      V
+-Video y animacion            X
+-Musica de fondo              V
+-Cambiar boton de musica segun conveniencia V
+-Waves al menu de arriba      V
+-Boton aumentar tamaño letras X

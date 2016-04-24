@@ -9,7 +9,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-
+    <script src="js/jquery-1.12.3.jsjquery-1.12.3.js" type="text/javascript"></script>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Icons-->
@@ -23,72 +23,105 @@
 
     <!--Progress Bar-->
     <script src='js/nprogress.js'></script>
-    <link rel='stylesheet' href='css/nprogress.css'/>
+    <link rel='stylesheet' href='css/nprogress.css' />
 
     <meta charset="UTF-8">
 </head>
 <script type="text/javascript">
-    NProgress.start(); 
+    NProgress.start();
 </script>
-<body >
+
+<body>
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper grey darken-4 ">
-                <a href="#" class="brand-logo"><img class="logo" src="logo.png"></a>
+                <a href="index.html" class="brand-logo"><img class="logo" src="logo.png">
+                </a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="visitar.html">¿Qué visitar?</a>
+
+                    <li class="waves-effect waves-green"><a href="#noscroll" id="mute"onclick="cambiar()"><i id="prueba"class="material-icons prefix">volume_off</i></a>
                     </li>
-                    <li><a href="badges.html">Components</a>
+                    
+                    <li class="waves-effect waves-green"><a href="visitar.html" id="menu">¿Qué visitar?</a>
                     </li>
-                    <li><a href="collapsible.html">Javascript</a>
+                    <li class="waves-effect waves-green"><a href="comer.html" id="menu">¿Donde comer?</a>
                     </li>
-                    <li><a href="mobile.html">Mobile</a>
+                    <li class="waves-effect waves-green"><a href="contacta.html" id="menu">Contacta</a>
                     </li>
+
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
                     <li><a href="visitar.html">¿Qué visitar?</a>
                     </li>
-                    <li><a href="badges.html">Components</a>
+                    <li><a href="comer.html">¿Donde comer?</a>
                     </li>
-                    <li><a href="collapsible.html">Javascript</a>
+                    <li><a href="contacta.html">Contacta</a>
                     </li>
-                    <li><a href="mobile.html">Mobile</a>
-                    </li>
+
                 </ul>
             </div>
         </nav>
     </div>
 
+    <audio id="background_audio" autoplay="autoplay">
+        <source src="song.mp3" />
+    </audio>
+
+
+    <script type="text/javascript">
+        var audio = document.getElementById('background_audio');
+
+        document.getElementById('mute').addEventListener('click', function (e) {
+            e = e || window.event;
+            
+            audio.muted = !audio.muted;
+            e.preventDefault();
+        }, false);
+        function cambiar()
+{
+    if(document.getElementById('prueba').innerHTML == "volume_off"){
+        document.getElementById('prueba').innerHTML = "volume_up";}
+    else{
+    document.getElementById('prueba').innerHTML = "volume_off";
+    }
+}
+        
+    </script>
+
+
 
     <div class="parallax-container">
         <div class="slider">
-    <ul class="slides">
-      <li>
-        <img src="http://lorempixel.com/580/250/nature/1"> <!-- random image -->
-        <div class="caption center-align">
-          <h3>Hijo puta</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            <ul class="slides">
+                <li>
+                    <img src="http://lorempixel.com/580/250/nature/1">
+                    <!-- random image -->
+                    <div class="caption center-align">
+                        <h3>Gandia es fiesta</h3>
+                        <h5 class="light grey-text text-lighten-3"></h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="http://lorempixel.com/580/250/nature/2">
+                    <!-- random image -->
+                    <div class="caption left-align">
+                        <h3>Gandia es playa</h3>
+                        <h5 class="light grey-text text-lighten-3"></h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="http://lorempixel.com/580/250/nature/3">
+                    <!-- random image -->
+                    <div class="caption right-align">
+                        <h3>Gandia es cultura</h3>
+                        <h5 class="light grey-text text-lighten-3"></h5>
+                    </div>
+                </li>
+
+            </ul>
         </div>
-      </li>
-      <li>
-        <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
-        <div class="caption left-align">
-          <h3>Acosador</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
-        <div class="caption right-align">
-          <h3>Down</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      
-    </ul>
-  </div>
-        </div>
+    </div>
     </div>
 
 
@@ -97,87 +130,86 @@
             <h2 class="header">Cualidades de gandia</h2>
             <div class="row">
                 <div class="col s12 l4 medium">
-                    
-                    <div class="card large"> 
+
+                    <div class="card large">
                         <div class="card-image">
-                            <img src="images/noche.jpg"/> 
-                            
+                            <img src="images/noche.jpg" />
+
                             <span class="card-title">Ocio nocturno</span>
                         </div>
                         <div class="card-content">
-                            <p>Gandía es una ciudad viva, llena de cultura y de ocio, cuenta con cuatro discotecas reconocidas
-                            a nivel internacional, cuatro sitios donde pasar la noche bailando y de copas con tus amigos</p>
+                            <p>Gandía es una ciudad viva, llena de cultura y de ocio, cuenta con cuatro discotecas reconocidas a nivel internacional, cuatro sitios donde pasar la noche bailando y de copas con tus amigos</p>
                         </div>
                         <div class="card-action">
-                            <a href="#"class=" waves-green">Mira las discotecas aqui</a>
-                        </div>
-                    </div><
-                </div>
-
-                <div class="col s12 l4">
-                    <div class="card large">
-                        <div class="card-image">
-                             <img src="images/restaurant.jpg"/>
-                            <span class="card-title">Gastronomía</span>
-                        </div>
-                        <div class="card-content">
-                            <p>Gandia cuenta con una gran seleccion de hoteles y restaurantes donde
-                            poder paliar nuestros sentidos culinarios. La fideuá es su mejor escaparate, envidiada 
-                            en todo territorio nacional.</p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">This is a link</a>
+                            <a href="#" class=" waves-green">Mira las discotecas aqui</a>
                         </div>
                     </div>
-                </div>
+                    < </div>
 
-                <div class="col s12 l4">
-                    <div class="card large">
-                        <div class="card-image">
-                             <img  src="images/playa.png"/> 
-                            <span class="card-title">Playas</span>
+                        <div class="col s12 l4">
+                            <div class="card large">
+                                <div class="card-image">
+                                    <img src="images/restaurant.jpg" />
+                                    <span class="card-title">Gastronomía</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>Gandia cuenta con una gran seleccion de hoteles y restaurantes donde poder paliar nuestros sentidos culinarios. La fideuá es su mejor escaparate, envidiada en todo territorio nacional.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+
+                        <div class="col s12 l4">
+                            <div class="card large">
+                                <div class="card-image">
+                                    <img src="images/playa.png" />
+                                    <span class="card-title">Playas</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-action">
-                            <a href="#">This is a link</a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="parallax-container">
-        <div class="parallax"class="responsive-img"><img src="images/hotel.jpg">
-        </div>
-    </div>
-
-        
-         <footer class="page-footer grey darken-4">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Por qué visitar Gandia</h5>
-                <p class="grey-text text-lighten-4">
-
-</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                </ul>
-              </div>
+        <div class="parallax-container">
+            <div class="parallax" class="responsive-img"><img src="images/hotel.jpg">
             </div>
-          </div>
-          <div class="footer-copyright">
+        </div>
+
+
+        <footer class="page-footer grey darken-4">
             <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Por qué visitar Gandia</h5>
+                        <p class="grey-text text-lighten-4">
+
+                        </p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Links</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a>
+                            </li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2014 Copyright Text
+                    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                </div>
+            </div>
         </footer>
 </body>
 
@@ -185,9 +217,5 @@
 
 <script type="">
 
-    $( document ).ready(function(){ 
-        NProgress.done(); 
-        $(".button-collapse").sideNav(); $('.parallax').parallax();
-        $('.slider').slider({full_width: true});
-    })
+    $( document ).ready(function(){ NProgress.done(); $(".button-collapse").sideNav(); $('.parallax').parallax(); $('.slider').slider({full_width: true}); })
 </script>
