@@ -37,14 +37,16 @@ width:750px;
 }
 
 .visor{
-	height: 500px;
-	border-color: black;
-	border: solid;
+	height: auto;
 	border-width: 2px;
-	background-repeat: no-repeat;
 	margin-top: -200px;
 }
 
 .carousel{
 	margin-top: -100px !important;
+}
+
+
+.fotovisor{
+	background-size: cover !important;
 }
