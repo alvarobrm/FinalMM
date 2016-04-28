@@ -87,23 +87,25 @@
   </div>
 <div class="row container">
     <h2 class="header">Envia una postal:</h2> 
+    <p class="header">Envie la postal que haya seleccionado arriba.</p> 
     <hr>
 </div>
 <div class="row container" >
     <form class="col s12" action="mail.php" method="POST" role="form">
         <div class="input-field col s12 m5">
           <i class="material-icons prefix" alt="icono formulario nombre">account_circle</i>
-          <input id="icon_prefix" type="text" class="validate" name="name">
-          <label for="icon_prefix">Nombre</label>
+          <input id="icon_prefix" type="text" class="validate" name="name" required>
+          <label for="icon_prefix">Nombre<span class="obligatorio">*</span></label>
         </div>
         <div class="input-field col s12 m5">
           <i class="material-icons prefix">email</i>
-          <input id="icon_telephone" type="text" class="validate" name="mail">
-          <label for="icon_telephone" alt="icono formulario correo">Correo</label>
+          <input id="icon_telephone" type="text" class="validate" name="mail" required>
+          <label for="icon_telephone" alt="icono formulario correo">Correo<span class="obligatorio">*</span></label>
         </div>
-        <input id="img" type="text" hidden="true" value="" name="img"></input>
+        <input id="img" type="text" hidden="true" value="images/postal1.jpg" name="img"></input>
         <input type="submit" class="col s12 m2 waves-effect waves-light btn"></input>    
     </form>
+    <span class="obligatorio">* Campos obligatorios</span>
 </div>
 
             
