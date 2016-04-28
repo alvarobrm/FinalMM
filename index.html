@@ -43,11 +43,11 @@
                     <li class="waves-effect waves-green"><a href="#noscroll" id="mute"onclick="cambiar()"><i id="prueba"class="material-icons prefix">volume_off</i></a>
                     </li>
                     
-                    <li class="waves-effect waves-green"><a href="visitar.html" id="menu">¿Qué visitar?</a>
+                    <li class="waves-effect waves-green tooltipped"><a href="visitar.html" id="menu"class="btn tooltipped grey darken-4"data-position="bottom" data-delay="50" data-tooltip="Clic para ver que sitios visitar">¿Qué visitar?</a>
                     </li>
-                    <li class="waves-effect waves-green"><a href="comer.html" id="menu">¿Donde comer?</a>
+                    <li class="waves-effect waves-green"><a href="comer.html" id="menu"class="btn tooltipped grey darken-4"data-position="bottom" data-delay="50" data-tooltip="Clic para ver donde comer">¿Donde comer?</a>
                     </li>
-                    <li class="waves-effect waves-green"><a href="contacta.html" id="menu">Contacta</a>
+                    <li class="waves-effect waves-green"><a href="contacta.html" id="menu"class="btn tooltipped grey darken-4"data-position="bottom" data-delay="50" data-tooltip="Clic para ver la galeria">Galería</a>
                     </li>
 
                 </ul>
@@ -103,7 +103,7 @@
                     </div>
                 </li>
                 <li>
-                    <img class="responsive-img"src=""alt="imagen slider playas">
+                    <img class="responsive-img"src="images/slider2.jpg"alt="imagen slider playas">
                     <!-- random image -->
                     <div class="caption left-align">
                         <h3>Gandia es playa</h3>
@@ -111,7 +111,7 @@
                     </div>
                 </li>
                 <li>
-                    <img src="http://lorempixel.com/580/250/nature/3"alt="imagenslider3">
+                    <img src="images/slider3.jpg"alt="imagenslider3">
                     <!-- random image -->
                     <div class="caption right-align">
                         <h3>Gandia es cultura</h3>
@@ -141,10 +141,10 @@
                             <p>Gandía es una ciudad viva, llena de cultura y de ocio, cuenta con cuatro discotecas reconocidas a nivel internacional, cuatro sitios donde pasar la noche bailando y de copas con tus amigos</p>
                         </div>
                         <div class="card-action">
-                            <a href="#" class=" waves-green">Mira las discotecas aqui</a>
+                            <a href="#modal1" class="modal-trigger">VER MAS GRANDE</a>
                         </div>
                     </div>
-                    < </div>
+                     </div>
 
                         <div class="col s12 l4">
                             <div class="card large">
@@ -156,7 +156,7 @@
                                     <p>Gandia cuenta con una gran seleccion de hoteles y restaurantes donde poder paliar nuestros sentidos culinarios. La fideuá es su mejor escaparate, envidiada en todo territorio nacional.</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#">This is a link</a>
+                                    <a href="#modal2" class="modal-trigger">VER MAS GRANDE</a>
                                 </div>
                             </div>
                         </div>
@@ -168,10 +168,10 @@
                                     <span class="card-title">Playas</span>
                                 </div>
                                 <div class="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                                    <p> ¿Qué ofrece la playa de Gandia que otras playas no ofrecen? Gandia tiene más de 7 Km de playa divide en varios tramos.</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#">This is a link</a>
+                                    <a href="#modal3" class="modal-trigger">VER MAS GRANDE</a>
                                 </div>
                             </div>
                         </div>
@@ -184,25 +184,36 @@
         </div>
 
 </div>
+    <br>
+    
+    <iframe id="reproductor"class="youtube-player" type="text/html"  src="http://www.youtube.com/embed/fn2QX6aKV4s" frameborder="0"></iframe>
+    
         <footer class="page-footer grey darken-4"role="contentinfo">
             <div class="container">
                 <div class="row">
                     <div class="col l6 s12">
-                        <h5 class="white-text">Por qué visitar Gandia</h5>
-                        <p class="grey-text text-lighten-4">
-
-                        </p>
+                        <h5 class="white-text">Páginas relacionadas</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3 tooltipped " href="www.falkata.com/"data-position="bottom" data-delay="50" data-tooltip="Clic para visitar esta página web">www.falkata.com</a>
+                            </li>
+                            <li><a class="grey-text text-lighten-3 tooltipped " href="www.telero.es/"data-position="bottom" data-delay="50" data-tooltip="Clic para visitar esta página web">www.telero.es</a>
+                            </li>
+                            <li><a class="grey-text text-lighten-3 tooltipped " href="http://www.palauducal.com/?i=es&sec=vis"data-position="bottom" data-delay="50" data-tooltip="Clic para visitar esta página web">www.palauducal.com</a>
+                            </li>
+                            <li><a class="grey-text text-lighten-3 tooltipped " href="www.gandia.org/"data-position="bottom" data-delay="50" data-tooltip="Clic para visitar esta página web">www.gandia.org</a>
+                            </li>
+                        </ul>
                     </div>
                     <div class="col l4 offset-l2 s12">
                         <h5 class="white-text">Tabla de contenidos</h5>
                         <ul>
-                            <li><a class="grey-text text-lighten-3" href="index.html">Pagina principal</a>
+                            <li><a class="grey-text text-lighten-3 tooltipped " href="index.html"data-position="bottom" data-delay="50" data-tooltip="Clic para ir a la pagina principal">Pagina principal</a>
                             </li>
-                            <li><a class="grey-text text-lighten-3" href="visitar.html">¿Que visitar?</a>
+                            <li><a class="grey-text text-lighten-3 tooltipped " href="visitar.html"data-position="bottom" data-delay="50" data-tooltip="Clic para ver que sitios visitar">¿Que visitar?</a>
                             </li>
-                            <li><a class="grey-text text-lighten-3" href="comer.html">¿Que comer?</a>
+                            <li><a class="grey-text text-lighten-3 tooltipped " href="comer.html"data-position="bottom" data-delay="50" data-tooltip="Clic para ver donde comer">¿Que comer?</a>
                             </li>
-                            <li><a class="grey-text text-lighten-3" href="contacta.html">Contacta</a>
+                            <li><a class="grey-text text-lighten-3 tooltipped " href="contacta.html"data-position="bottom" data-delay="50" data-tooltip="Clic para ver la galeria">Galería</a>
                             </li>
                         </ul>
                     </div>
@@ -215,11 +226,50 @@
                 </div>
             </div>
         </footer>
+    
+    <!--****************************MODALS****************************-->
+
+    <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Ocio nocturno</h4>
+      <img class="responsive-img" src="images/noche.jpg" style="width: 100%; height: 300px;">
+      <br><br><br>
+            <p class="flow-text" id="fText1">Gandía es una ciudad viva, llena de cultura y de ocio, cuenta con cuatro discotecas reconocidas a nivel internacional, cuatro sitios donde pasar la noche bailando y de copas con tus amigos</p>
+    </div>
+    <div class="modal-footer">
+        <a class="modal-action modal-close waves-effect waves-green btn-flat ">Cerrar</a>
+    </div>
+  </div>
+    
+     <div id="modal2" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Gastronomía</h4>
+      <img class="responsive-img" src="images/restaurant.jpg" style="width: 100%; height: 300px;">
+      <br><br><br>
+            <p class="flow-text" id="fText1">Gandia cuenta con una gran seleccion de hoteles y restaurantes donde poder paliar nuestros sentidos culinarios. La fideuá es su mejor escaparate, envidiada en todo territorio nacional.</p>
+    </div>
+    <div class="modal-footer">
+        <a class="modal-action modal-close waves-effect waves-green btn-flat ">Cerrar</a>
+    </div>
+         
+  </div>
+     <div id="modal3" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Playas</h4>
+      <img class="responsive-img" src="images/noche.jpg" style="width: 100%; height: 300px;">
+      <br><br><br>
+            <p class="flow-text" id="fText1"> ¿Qué ofrece la playa de Gandia que otras playas no ofrecen? Gandia tiene más de 7 Km de playa divide en varios tramos.</p>
+    </div>
+    <div class="modal-footer">
+        <a class="modal-action modal-close waves-effect waves-green btn-flat ">Cerrar</a>
+    </div>
+  </div>
 </body>
 
 </html>
 
 <script type="">
 
-    $( document ).ready(function(){ NProgress.done(); $(".button-collapse").sideNav(); $('.parallax').parallax(); $('.slider').slider({full_width: true}); })
+    $( document ).ready(function(){ NProgress.done(); $(".button-collapse").sideNav(); $('.parallax').parallax(); $('.slider').slider({full_width: true});$('.modal-trigger').leanModal();$('.tooltipped').tooltip({delay: 50}); })
 </script>
