@@ -15,6 +15,7 @@
     <!--Icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <script src="http://api.html5media.info/1.1.5/html5media.min.js"></script>
     <!--MDL-->
     <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
@@ -30,6 +31,7 @@
 <script type="text/javascript">
     NProgress.start();
 </script>
+    
 
 <body>
     <div class="navbar-fixed"role="navigation">
@@ -40,7 +42,7 @@
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
 
-                    <li class="waves-effect waves-green"><a href="#noscroll" id="mute"onclick="cambiar()"><i id="prueba"class="material-icons prefix">volume_off</i></a>
+                    <li class="waves-effect waves-green"><a href="#noscroll" id="mute"onclick="cambiar()"><i id="prueba"class="material-icons prefix">volume_up</i></a>
                     </li>
                     
                     <li class="waves-effect waves-green tooltipped"><a href="visitar.html" id="menu"class="btn tooltipped grey darken-4"data-position="bottom" data-delay="50" data-tooltip="Clic para ver que sitios visitar">¿Qué visitar?</a>
@@ -64,8 +66,8 @@
         </nav>
     </div>
 
-    <audio id="background_audio" autoplay="autoplay">
-        <source src="caribe.ogg" />
+    <audio id="background_audio" autoplay="loop">
+        <source src="omi.mp3" />
     </audio>
 
 
@@ -141,7 +143,7 @@
                             <p>Gandía es una ciudad viva, llena de cultura y de ocio, cuenta con cuatro discotecas reconocidas a nivel internacional, cuatro sitios donde pasar la noche bailando y de copas con tus amigos</p>
                         </div>
                         <div class="card-action">
-                            <a href="#modal1" class="modal-trigger">VER MAS GRANDE</a>
+                            <a href="#modal1" class="modal-trigger"><u>VER MAS GRANDE</u></a>
                         </div>
                     </div>
                      </div>
@@ -156,7 +158,7 @@
                                     <p>Gandia cuenta con una gran seleccion de hoteles y restaurantes donde poder paliar nuestros sentidos culinarios. La fideuá es su mejor escaparate, envidiada en todo territorio nacional.</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#modal2" class="modal-trigger">VER MAS GRANDE</a>
+                                    <a href="#modal2" class="modal-trigger"><u>VER MAS GRANDE</u></a>
                                 </div>
                             </div>
                         </div>
@@ -171,7 +173,7 @@
                                     <p> ¿Qué ofrece la playa de Gandia que otras playas no ofrecen? Gandia tiene más de 7 Km de playa divide en varios tramos.</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#modal3" class="modal-trigger">VER MAS GRANDE</a>
+                                    <a href="#modal3" class="modal-trigger"><u>VER MAS GRANDE</u></a>
                                 </div>
                             </div>
                         </div>
@@ -201,26 +203,26 @@
                     <div class="col l6 s12">
                         <h5 class="white-text">Páginas relacionadas</h5>
                         <ul>
-                            <li><a class="grey-text text-lighten-3 tooltipped " href="www.falkata.com/"data-position="bottom" data-delay="50" data-tooltip="Clic para visitar esta página web">www.falkata.com</a>
+                            <li><a class="grey-text text-lighten-3 tooltipped " href="www.falkata.com/"data-position="bottom" data-delay="50" data-tooltip="Clic para visitar esta página web"><u>www.falkata.com</u></a>
                             </li>
-                            <li><a class="grey-text text-lighten-3 tooltipped " href="www.telero.es/"data-position="bottom" data-delay="50" data-tooltip="Clic para visitar esta página web">www.telero.es</a>
+                            <li><a class="grey-text text-lighten-3 tooltipped " href="www.telero.es/"data-position="bottom" data-delay="50" data-tooltip="Clic para visitar esta página web"><u>www.telero.es</u></a>
                             </li>
-                            <li><a class="grey-text text-lighten-3 tooltipped " href="http://www.palauducal.com/?i=es&sec=vis"data-position="bottom" data-delay="50" data-tooltip="Clic para visitar esta página web">www.palauducal.com</a>
+                            <li><a class="grey-text text-lighten-3 tooltipped " href="http://www.palauducal.com/?i=es&sec=vis"data-position="bottom" data-delay="50" data-tooltip="Clic para visitar esta página web"><u>www.palauducal.com</u></a>
                             </li>
-                            <li><a class="grey-text text-lighten-3 tooltipped " href="www.gandia.org/"data-position="bottom" data-delay="50" data-tooltip="Clic para visitar esta página web">www.gandia.org</a>
+                            <li><a class="grey-text text-lighten-3 tooltipped " href="www.gandia.org/"data-position="bottom" data-delay="50" data-tooltip="Clic para visitar esta página web"><u>www.gandia.org</u></a>
                             </li>
                         </ul>
                     </div>
                     <div class="col l4 offset-l2 s12">
                         <h5 class="white-text">Tabla de contenidos</h5>
                         <ul>
-                            <li><a class="grey-text text-lighten-3 tooltipped " href="index.html"data-position="bottom" data-delay="50" data-tooltip="Clic para ir a la pagina principal">Pagina principal</a>
+                            <li><a class="grey-text text-lighten-3 tooltipped " href="index.html"data-position="bottom" data-delay="50" data-tooltip="Clic para ir a la pagina principal"><u>Pagina principal</u></a>
                             </li>
-                            <li><a class="grey-text text-lighten-3 tooltipped " href="visitar.html"data-position="bottom" data-delay="50" data-tooltip="Clic para ver que sitios visitar">¿Que visitar?</a>
+                            <li><a class="grey-text text-lighten-3 tooltipped " href="visitar.html"data-position="bottom" data-delay="50" data-tooltip="Clic para ver que sitios visitar"><u>¿Que visitar?</u></a>
                             </li>
-                            <li><a class="grey-text text-lighten-3 tooltipped " href="comer.html"data-position="bottom" data-delay="50" data-tooltip="Clic para ver donde comer">¿Que comer?</a>
+                            <li><a class="grey-text text-lighten-3 tooltipped " href="comer.html"data-position="bottom" data-delay="50" data-tooltip="Clic para ver donde comer"><u>¿Que comer?</u></a>
                             </li>
-                            <li><a class="grey-text text-lighten-3 tooltipped " href="contacta.html"data-position="bottom" data-delay="50" data-tooltip="Clic para ver la galeria">Galería</a>
+                            <li><a class="grey-text text-lighten-3 tooltipped " href="contacta.html"data-position="bottom" data-delay="50" data-tooltip="Clic para ver la galeria"><u>Galería</u></a>
                             </li>
                         </ul>
                     </div>

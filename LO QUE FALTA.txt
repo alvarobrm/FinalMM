@@ -4,7 +4,7 @@
 
 EXCEL A
 -1.2.3 Audiodescripcion o medio alternativo (pa lo ultimo)
-
+-2.2.2 pausar slider
 -Enlaces y botones descriptivos
 -Validar
 
