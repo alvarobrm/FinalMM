@@ -65,15 +65,15 @@ document.getElementById('map').style.display = 'block';}
                     
                     <li class="waves-effect waves-green tooltipped"><a href="visitar.html" id="menu"class="btn tooltipped grey darken-4"data-position="bottom" data-delay="50" data-tooltip="Clic para ver que sitios visitar">¿Qué visitar?</a>
                     </li>
-                    <li class="waves-effect waves-green"><a href="comer.html" id="menu"class="btn tooltipped grey darken-4"data-position="bottom" data-delay="50" data-tooltip="Clic para ver donde comer">¿Donde comer?</a>
+                    <li class="waves-effect waves-green"><a href="comer.html" id="menu"class="btn tooltipped grey darken-4"data-position="bottom" data-delay="50" data-tooltip="Clic para ver donde comer">¿Dónde comer?</a>
                     </li>
                     <li class="waves-effect waves-green"><a href="contacta.html" id="menu"class="btn tooltipped grey darken-4"data-position="bottom" data-delay="50" data-tooltip="Clic para ver la galeria">Galería</a>
                     </li>
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
-                    <li><a href="visitar.html">¿Que visitar?</a>
+                    <li><a href="visitar.html">¿Qué visitar?</a>
                     </li>
-                    <li><a href="comer.html">¿Donde comer?</a>
+                    <li><a href="comer.html">¿Dónde comer?</a>
                     </li>
                     <li><a href="contacta.html">Contacta</a>
 
@@ -87,7 +87,7 @@ document.getElementById('map').style.display = 'block';}
 
     <div class="section white"role="main">
         <div class="row container">
-            <h2 class="header">¿Que comer?</h2>
+            <h2 class="header">¿Qué comer?</h2>
             <div class="row">
                 <div class="col s12 l4 medium">
 
@@ -97,7 +97,8 @@ document.getElementById('map').style.display = 'block';}
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4 tooltipped"data-position="bottom" data-delay="50" data-tooltip="Clic para saber mas">Restaurante Telero<i class="material-icons right tooltipped"data-position="bottom" data-delay="50" data-tooltip="Clic para saber mas">more_vert</i></span>
-                            <p><a class="modal-trigger" href="#modal1"><u>Ver más grande</u></a>
+                            <p><a class="modal-trigger" href="#modal1"><u>Ver más grande</u></a><br>
+                            <a class="modal-trigger" href="#modalMap1"><u>¿Donde está?</u></a>
                             </p>
                         </div>
                         <div class="card-reveal">
@@ -118,7 +119,8 @@ Hemos acudido unas cuantas veces y en nuestra última visita a mediados del mes 
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4 tooltipped"data-position="bottom" data-delay="50" data-tooltip="Clic para saber mas">Resturante Taula<i class="material-icons right tooltipped"data-position="bottom" data-delay="50" data-tooltip=""Clic para saber mas"">more_vert</i></span>
-                            <p><a class="modal-trigger" href="#modal2"><u>Ver más grande</u></a>
+                            <p><a class="modal-trigger" href="#modal2"><u>Ver más grande</u></a><br>
+                            <a class="modal-trigger" href="#modalMap2"><u>¿Donde está?</u></a>
                             </p>
                         </div>
                         <div class="card-reveal">
@@ -138,7 +140,8 @@ Espacio gastronómico para paladares exigentes que no angustia al bolsillo. Visi
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4 tooltipped"data-position="bottom" data-delay="50" data-tooltip="Clic para saber mas">Restaurante Vallier<i class="material-icons right tooltipped"data-position="bottom" data-delay="50" data-tooltip="Clic para saber mas">more_vert</i></span>
-                            <p><a class="modal-trigger" href="#modal3"><u>Ver más grande</u></a>
+                            <p><a class="modal-trigger" href="#modal3"><u>Ver más grande</u></a><br>
+                            <a class="modal-trigger" href="#modalMap3"><u>¿Donde está?</u></a>
                             </p>
                         </div>
                         <div class="card-reveal">
@@ -150,19 +153,6 @@ A Vallier, situado en la zona Raval-Prado de Gandía, se ha convertido en un ref
                 </div>
 
 
-                <!-- Modal Structure -->
-                <div id="modalMapa1" class="modal">
-                    <div class="modal-content">
-                        <h4>Modal Header</h4>
-                        AQUI IRIA EL MAPAAAA
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-                    </div>
-                </div>
-
-
-<div id="map"></div>
             </div>
         </div>
     </div>
@@ -213,6 +203,38 @@ A Vallier, situado en la zona Raval-Prado de Gandía, se ha convertido en un ref
   </div>
 
 
+<!-- ******************* MAPS***************** -->
+
+<div id="modalMap1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Restaurante Telero</h4>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.2295941204757!2d-0.18317068493410393!3d38.964425150596064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61e849a23e63d9%3A0x701182883fde90cb!2sRestaurante+Telero!5e0!3m2!1ses!2ses!4v1461967652620" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="modal-footer">
+        <a class="modal-action modal-close waves-effect waves-green btn-flat ">Cerrar</a>
+    </div>
+  </div>
+
+  <div id="modalMap2" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Resturante Taula</h4>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3100.949708107203!2d-0.1640486849332566!3d38.99364414887066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61c2a43a6823f5%3A0x8997fb1d085a79c8!2sRestaurante+La+Taula!5e0!3m2!1ses!2ses!4v1461967818791" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="modal-footer">
+        <a class="modal-action modal-close waves-effect waves-green btn-flat ">Cerrar</a>
+    </div>
+  </div>
+
+  <div id="modalMap3" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Restaurante Vallier</h4>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.2242430479196!2d-0.18352208493411412!3d38.96454735058884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61e849998456f1%3A0x63d2a710c3d4fce4!2sAvallier!5e0!3m2!1ses!2ses!4v1461967768984" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="modal-footer">
+        <a class="modal-action modal-close waves-effect waves-green btn-flat ">Cerrar</a>
+    </div>
+  </div>
+
     
 
     <footer class="page-footer grey darken-4"role="contentinfo">
@@ -249,7 +271,6 @@ A Vallier, situado en la zona Raval-Prado de Gandía, se ha convertido en un ref
         <div class="footer-copyright">
             <div class="container">
                 © 2014 Copyright Text
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
         </div>
     </footer>

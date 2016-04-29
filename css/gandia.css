@@ -5,6 +5,11 @@ body h1,h2{
 body h3{
 	color:#f44336;
 }
+
+body a{
+	cursor:pointer; 
+	cursor: hand;
+}
 .navbar-fixed{
 	opacity: 0.93;
 }
@@ -70,4 +75,8 @@ width:750px;
 
 .video-container{
 	padding-bottom: 30% ;
+}
+
+.sliderbt{
+	color: #aeea00;
 }

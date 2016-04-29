@@ -47,7 +47,7 @@
                     
                     <li class="waves-effect waves-green tooltipped"><a href="visitar.html" id="menu"class="btn tooltipped grey darken-4"data-position="bottom" data-delay="50" data-tooltip="Clic para ver que sitios visitar">¿Qué visitar?</a>
                     </li>
-                    <li class="waves-effect waves-green"><a href="comer.html" id="menu"class="btn tooltipped grey darken-4"data-position="bottom" data-delay="50" data-tooltip="Clic para ver donde comer">¿Donde comer?</a>
+                    <li class="waves-effect waves-green"><a href="comer.html" id="menu"class="btn tooltipped grey darken-4"data-position="bottom" data-delay="50" data-tooltip="Clic para ver donde comer">¿Dónde comer?</a>
                     </li>
                     <li class="waves-effect waves-green"><a href="contacta.html" id="menu"class="btn tooltipped grey darken-4"data-position="bottom" data-delay="50" data-tooltip="Clic para ver la galeria">Galería</a>
                     </li>
@@ -56,7 +56,7 @@
                 <ul class="side-nav" id="mobile-demo">
                     <li><a href="visitar.html">¿Qué visitar?</a>
                     </li>
-                    <li><a href="comer.html">¿Donde comer?</a>
+                    <li><a href="comer.html">¿Dónde comer?</a>
                     </li>
                     <li><a href="contacta.html">Contacta</a>
                     </li>
@@ -98,7 +98,6 @@
             <ul class="slides">
                 <li>
                     <img class="responsive-img"src="images/dissco.jpg"alt="imagen slider discoteca">
-                    <!-- random image -->
                     <div class="caption center-align">
                         <h3>Gandia es fiesta</h3>
                         <h5 class="light grey-text text-lighten-3"></h5>
@@ -106,7 +105,6 @@
                 </li>
                 <li>
                     <img class="responsive-img"src="images/slider2.jpg"alt="imagen slider playas">
-                    <!-- random image -->
                     <div class="caption left-align">
                         <h3>Gandia es playa</h3>
                         <h5 class="light grey-text text-lighten-3"></h5>
@@ -114,7 +112,6 @@
                 </li>
                 <li>
                     <img src="images/slider3.jpg"alt="imagenslider3">
-                    <!-- random image -->
                     <div class="caption right-align">
                         <h3>Gandia es cultura</h3>
                         <h5 class="light grey-text text-lighten-3"></h5>
@@ -122,6 +119,15 @@
                 </li>
 
             </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s8 offset-s2  offset-m4 offset-l5">
+            <a onclick="$('.slider').slider('prev');"><i class="material-icons medium sliderbt">skip_previous</i></a>
+            <a onclick="pause()"><i id="pausa" class="material-icons medium sliderbt">pause_circle_outline</i></a>
+            <a onclick="play()"> <i id="play"class="material-icons medium sliderbt" >play_circle_filled</i></a>
+            <a onclick="$('.slider').slider('next');"><i class="material-icons medium sliderbt">skip_next</i></a>
         </div>
     </div>
     </div>
@@ -231,7 +237,6 @@
             <div class="footer-copyright">
                 <div class="container">
                     © 2014 Copyright Text
-                    <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
                 </div>
             </div>
         </footer>
@@ -281,4 +286,17 @@
 <script type="">
 
     $( document ).ready(function(){ NProgress.done(); $(".button-collapse").sideNav(); $('.parallax').parallax(); $('.slider').slider({full_width: true});$('.modal-trigger').leanModal();$('.tooltipped').tooltip({delay: 50}); })
+    function pause(){
+        $("#pausa").html("pause_circle_filled");
+        $("#play").html("play_circle_outline");
+        $('.slider').slider('pause');
+    }
+
+    function play(){
+        $("#pausa").html("pause_circle_outline");
+        $("#play").html("play_circle_filled");
+        $('.slider').slider('start');
+    }
+
+
 </script>
