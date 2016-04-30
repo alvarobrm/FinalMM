@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+<meta charset="UTF-8">
     <title>Pagina principal de sitio turistico Gandia</title>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
@@ -26,30 +27,31 @@
     <script src='js/nprogress.js'></script>
     <link rel='stylesheet' href='css/nprogress.css' />
 
-    <meta charset="UTF-8">
+    <script type="text/javascript">
+        NProgress.start();
+    </script>
+    
 </head>
-<script type="text/javascript">
-    NProgress.start();
-</script>
+
     
 
 <body>
-    <div class="navbar-fixed"role="navigation">
+    <div class="navbar-fixed" role="navigation">
         <nav>
             <div class="nav-wrapper grey darken-4 ">
-                <a href="index.html" class="brand-logo"role="banner"><img class="logo" src="logo.png">
+                <a href="index.html" class="brand-logo"><img class="logo" src="logo.png" alt="Logo de la web">
                 </a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
 
-                    <li class="waves-effect waves-green"><a href="#noscroll" id="mute"onclick="cambiar()"><i id="prueba"class="material-icons prefix">volume_up</i></a>
+                    <li class="waves-effect waves-green"><a href="#noscroll" id="mute" onclick="cambiar()"><i id="prueba" class="material-icons prefix">volume_up</i></a>
                     </li>
                     
-                    <li class="waves-effect waves-green tooltipped"><a href="visitar.html" id="menu"class="btn tooltipped grey darken-4"data-position="bottom" data-delay="50" data-tooltip="Clic para ver que sitios visitar">¿Qué visitar?</a>
+                    <li class="waves-effect waves-green tooltipped"><a href="visitar.html" class="btn tooltipped grey darken-4 menu" data-position="bottom" data-delay="50" data-tooltip="Clic para ver que sitios visitar">¿Qué visitar?</a>
                     </li>
-                    <li class="waves-effect waves-green"><a href="comer.html" id="menu"class="btn tooltipped grey darken-4"data-position="bottom" data-delay="50" data-tooltip="Clic para ver donde comer">¿Dónde comer?</a>
+                    <li class="waves-effect waves-green"><a href="comer.html" class="btn tooltipped grey darken-4 menu" data-position="bottom" data-delay="50" data-tooltip="Clic para ver donde comer">¿Dónde comer?</a>
                     </li>
-                    <li class="waves-effect waves-green"><a href="contacta.html" id="menu"class="btn tooltipped grey darken-4"data-position="bottom" data-delay="50" data-tooltip="Clic para ver la galeria">Galería</a>
+                    <li class="waves-effect waves-green"><a href="contacta.html" class="btn tooltipped grey darken-4 menu" data-position="bottom" data-delay="50" data-tooltip="Clic para ver la galeria">Galería</a>
                     </li>
 
                 </ul>
@@ -97,24 +99,21 @@
         <div class="slider">
             <ul class="slides">
                 <li>
-                    <img class="responsive-img"src="images/dissco.jpg"alt="imagen slider discoteca">
+                    <img class="responsive-img" src="images/dissco.jpg" alt="imagen slider discoteca">
                     <div class="caption center-align">
                         <h3>Gandia es fiesta</h3>
-                        <h5 class="light grey-text text-lighten-3"></h5>
                     </div>
                 </li>
                 <li>
-                    <img class="responsive-img"src="images/slider2.jpg"alt="imagen slider playas">
+                    <img class="responsive-img" src="images/slider2.jpg" alt="imagen slider playas">
                     <div class="caption left-align">
                         <h3>Gandia es playa</h3>
-                        <h5 class="light grey-text text-lighten-3"></h5>
                     </div>
                 </li>
                 <li>
-                    <img src="images/slider3.jpg"alt="imagenslider3">
+                    <img src="images/slider3.jpg" alt="imagenslider3">
                     <div class="caption right-align">
                         <h3>Gandia es cultura</h3>
-                        <h5 class="light grey-text text-lighten-3"></h5>
                     </div>
                 </li>
 
@@ -126,7 +125,7 @@
         <div class="col s8 offset-s2  offset-m4 offset-l5">
             <a onclick="$('.slider').slider('prev');"><i class="material-icons medium sliderbt">skip_previous</i></a>
             <a onclick="pause()"><i id="pausa" class="material-icons medium sliderbt">pause_circle_outline</i></a>
-            <a onclick="play()"> <i id="play"class="material-icons medium sliderbt" >play_circle_filled</i></a>
+            <a onclick="play()"> <i id="play" class="material-icons medium sliderbt" >play_circle_filled</i></a>
             <a onclick="$('.slider').slider('next');"><i class="material-icons medium sliderbt">skip_next</i></a>
         </div>
     </div>
@@ -141,7 +140,7 @@
 
                     <div class="card large">
                         <div class="card-image">
-                            <img src="images/noche.jpg"alt="imagencartaocio" />
+                            <img src="images/noche.jpg" alt="imagencartaocio" />
 
                             <span class="card-title">Ocio nocturno</span>
                         </div>
@@ -172,7 +171,7 @@
                         <div class="col s12 l4">
                             <div class="card large">
                                 <div class="card-image">
-                                    <img src="images/playa.png"alt="imagencartaplayas" />
+                                    <img src="images/playa.png" alt="imagencartaplayas" />
                                     <span class="card-title">Playas</span>
                                 </div>
                                 <div class="card-content">
@@ -190,45 +189,45 @@
         <div class="row">
             <div class="con s12">
                 <div class="parallax-container">
-                    <div width="853" height="480"  class="parallax" class="responsive-img"><img src="images/hotel.jpg"alt="imagenindexgrande">
+                    <div  class="parallax responsive-img"><img src="images/hotel.jpg" alt="imagenindexgrande">
                     </div>
                 </div>
             </div>
         </div>
 
-</div>
+
     <br>
-<div class="video-container">
-        <iframe width="853" height="480" src="http://www.youtube.com/embed/fn2QX6aKV4s" frameborder="0" allowfullscreen></iframe>
-      </div>
+<div class="video-container container">
+        <iframe width="853" height="480" src="http://www.youtube.com/embed/fn2QX6aKV4s" allowfullscreen></iframe>
+</div>
 
     
-        <footer class="page-footer grey darken-4"role="contentinfo">
+        <footer class="page-footer grey darken-4">
             <div class="container">
                 <div class="row">
                     <div class="col l6 s12">
                         <h5 class="white-text">Páginas relacionadas</h5>
                         <ul>
-                            <li><a class="grey-text text-lighten-3 tooltipped " href="www.falkata.com/"data-position="bottom" data-delay="50" data-tooltip="Clic para visitar esta página web"><u>www.falkata.com</u></a>
+                            <li><a class="grey-text text-lighten-3 tooltipped " href="www.falkata.com/" data-position="bottom" data-delay="50" data-tooltip="Clic para visitar esta página web"><u>www.falkata.com</u></a>
                             </li>
-                            <li><a class="grey-text text-lighten-3 tooltipped " href="www.telero.es/"data-position="bottom" data-delay="50" data-tooltip="Clic para visitar esta página web"><u>www.telero.es</u></a>
+                            <li><a class="grey-text text-lighten-3 tooltipped " href="www.telero.es/" data-position="bottom" data-delay="50" data-tooltip="Clic para visitar esta página web"><u>www.telero.es</u></a>
                             </li>
-                            <li><a class="grey-text text-lighten-3 tooltipped " href="http://www.palauducal.com/?i=es&sec=vis"data-position="bottom" data-delay="50" data-tooltip="Clic para visitar esta página web"><u>www.palauducal.com</u></a>
+                            <li><a class="grey-text text-lighten-3 tooltipped " href="http://www.palauducal.com/?i=es&sec=vis" data-position="bottom" data-delay="50" data-tooltip="Clic para visitar esta página web"><u>www.palauducal.com</u></a>
                             </li>
-                            <li><a class="grey-text text-lighten-3 tooltipped " href="www.gandia.org/"data-position="bottom" data-delay="50" data-tooltip="Clic para visitar esta página web"><u>www.gandia.org</u></a>
+                            <li><a class="grey-text text-lighten-3 tooltipped " href="www.gandia.org/" data-position="bottom" data-delay="50" data-tooltip="Clic para visitar esta página web"><u>www.gandia.org</u></a>
                             </li>
                         </ul>
                     </div>
                     <div class="col l4 offset-l2 s12">
                         <h5 class="white-text">Tabla de contenidos</h5>
                         <ul>
-                            <li><a class="grey-text text-lighten-3 tooltipped " href="index.html"data-position="bottom" data-delay="50" data-tooltip="Clic para ir a la pagina principal"><u>Pagina principal</u></a>
+                            <li><a class="grey-text text-lighten-3 tooltipped " href="index.html" data-position="bottom" data-delay="50" data-tooltip="Clic para ir a la pagina principal"><u>Pagina principal</u></a>
                             </li>
-                            <li><a class="grey-text text-lighten-3 tooltipped " href="visitar.html"data-position="bottom" data-delay="50" data-tooltip="Clic para ver que sitios visitar"><u>¿Que visitar?</u></a>
+                            <li><a class="grey-text text-lighten-3 tooltipped " href="visitar.html" data-position="bottom" data-delay="50" data-tooltip="Clic para ver que sitios visitar"><u>¿Que visitar?</u></a>
                             </li>
-                            <li><a class="grey-text text-lighten-3 tooltipped " href="comer.html"data-position="bottom" data-delay="50" data-tooltip="Clic para ver donde comer"><u>¿Que comer?</u></a>
+                            <li><a class="grey-text text-lighten-3 tooltipped " href="comer.html" data-position="bottom" data-delay="50" data-tooltip="Clic para ver donde comer"><u>¿Que comer?</u></a>
                             </li>
-                            <li><a class="grey-text text-lighten-3 tooltipped " href="contacta.html"data-position="bottom" data-delay="50" data-tooltip="Clic para ver la galeria"><u>Galería</u></a>
+                            <li><a class="grey-text text-lighten-3 tooltipped " href="contacta.html" data-position="bottom" data-delay="50" data-tooltip="Clic para ver la galeria"><u>Galería</u></a>
                             </li>
                         </ul>
                     </div>
@@ -247,9 +246,9 @@
   <div id="modal1" class="modal modal-fixed-footer">
     <div class="modal-content">
       <h4>Ocio nocturno</h4>
-      <img class="responsive-img" src="images/noche.jpg" style="width: 100%; height: 300px;">
+      <img class="responsive-img" src="images/noche.jpg" alt="Imagen ocio nocturno" style="width: 100%; height: 300px; ">
       <br><br><br>
-            <p class="flow-text" id="fText1">Gandía es una ciudad viva, llena de cultura y de ocio, cuenta con cuatro discotecas reconocidas a nivel internacional, cuatro sitios donde pasar la noche bailando y de copas con tus amigos</p>
+            <p class="flow-text" >Gandía es una ciudad viva, llena de cultura y de ocio, cuenta con cuatro discotecas reconocidas a nivel internacional, cuatro sitios donde pasar la noche bailando y de copas con tus amigos</p>
     </div>
     <div class="modal-footer">
         <a class="modal-action modal-close waves-effect waves-green btn-flat ">Cerrar</a>
@@ -259,9 +258,9 @@
      <div id="modal2" class="modal modal-fixed-footer">
     <div class="modal-content">
       <h4>Gastronomía</h4>
-      <img class="responsive-img" src="images/restaurant.jpg" style="width: 100%; height: 300px;">
+      <img class="responsive-img" src="images/restaurant.jpg" alt="Imagen gastronomía" style="width: 100%; height: 300px;">
       <br><br><br>
-            <p class="flow-text" id="fText1">Gandia cuenta con una gran seleccion de hoteles y restaurantes donde poder paliar nuestros sentidos culinarios. La fideuá es su mejor escaparate, envidiada en todo territorio nacional.</p>
+            <p class="flow-text" >Gandia cuenta con una gran seleccion de hoteles y restaurantes donde poder paliar nuestros sentidos culinarios. La fideuá es su mejor escaparate, envidiada en todo territorio nacional.</p>
     </div>
     <div class="modal-footer">
         <a class="modal-action modal-close waves-effect waves-green btn-flat ">Cerrar</a>
@@ -271,19 +270,17 @@
      <div id="modal3" class="modal modal-fixed-footer">
     <div class="modal-content">
       <h4>Playas</h4>
-      <img class="responsive-img" src="images/noche.jpg" style="width: 100%; height: 300px;">
+      <img class="responsive-img" src="images/noche.jpg" alt="Imagen playas" style="width: 100%; height: 300px;">
       <br><br><br>
-            <p class="flow-text" id="fText1"> ¿Qué ofrece la playa de Gandia que otras playas no ofrecen? Gandia tiene más de 7 Km de playa divide en varios tramos.</p>
+            <p class="flow-text" > ¿Qué ofrece la playa de Gandia que otras playas no ofrecen? Gandia tiene más de 7 Km de playa divide en varios tramos.</p>
     </div>
     <div class="modal-footer">
         <a class="modal-action modal-close waves-effect waves-green btn-flat ">Cerrar</a>
     </div>
   </div>
-</body>
 
-</html>
 
-<script type="">
+<script type="text/javascript">
 
     $( document ).ready(function(){ NProgress.done(); $(".button-collapse").sideNav(); $('.parallax').parallax(); $('.slider').slider({full_width: true});$('.modal-trigger').leanModal();$('.tooltipped').tooltip({delay: 50}); })
     function pause(){
@@ -300,3 +297,6 @@
 
 
 </script>
+</body>
+
+</html>
