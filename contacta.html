@@ -24,10 +24,11 @@
     <!--Progress Bar-->
     <script src='js/nprogress.js'></script>
     <link rel='stylesheet' href='css/nprogress.css' />
-</head>
-<script type="text/javascript">
+    <script type="text/javascript">
     NProgress.start();
 </script>
+</head>
+
     
 
 <body>
@@ -35,7 +36,7 @@
     <div class="navbar-fixed"role="navigation">
         <nav>
             <div class="nav-wrapper grey darken-4 ">
-                <a href="index.html" class="brand-logo"role="banner"><img class="logo" src="logo.png"></a>
+                <a href="index.html" class="brand-logo tooltipped" data-position="bottom" data-delay="50" data-tooltip="Clic para ir a la página principal"><img class="logo" src="logo.png"></a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down ">
                     <li class="waves-effect waves-green tooltipped"><a href="visitar.html" id="menu"class="btn tooltipped grey darken-4"data-position="bottom" data-delay="50" data-tooltip="Clic para ver que sitios visitar">¿Qué visitar?</a>
@@ -69,10 +70,10 @@
     <div class="row">
     
         <div class="carousel">
-            <a class="carousel-item" id="carrusel1" href="#one!"><img src="images/postal1.jpg"alt="imagenpostal1"></a>
-            <a class="carousel-item" id="carrusel3" href="#three!"><img src="images/postal2.jpg"alt="imagenpostal3"></a>
-            <a class="carousel-item" id="carrusel4" href="#four!"><img src="images/postal3.jpg"alt="imagenpostal4"></a>
-            <a class="carousel-item" id="carrusel5" href="#five!"><img src="images/postal4.jpg"alt="imagenpostal5"></a>
+            <a class="carousel-item tooltipped" data-position="bottom" data-delay="50" data-tooltip="Clic para elegir esta imagen" id="carrusel1" href="#one!"><img src="images/postal1.jpg"alt="imagenpostal1"></a>
+            <a class="carousel-item tooltipped" data-position="bottom" data-delay="50" data-tooltip="Clic para elegir esta imagen" id="carrusel3" href="#three!"><img src="images/postal2.jpg"alt="imagenpostal3"></a>
+            <a class="carousel-item tooltipped" data-position="bottom" data-delay="50" data-tooltip="Clic para elegir esta imagen" id="carrusel4" href="#four!"><img src="images/postal3.jpg"alt="imagenpostal4"></a>
+            <a class="carousel-item tooltipped" data-position="bottom" data-delay="50" data-tooltip="Clic para elegir esta imagen" id="carrusel5" href="#five!"><img src="images/postal4.jpg"alt="imagenpostal5"></a>
           </div>
 
           <div class="row visor">
@@ -103,14 +104,13 @@
           <label for="icon_telephone" alt="icono formulario correo">Correo<span class="obligatorio">*</span></label>
         </div>
         <input id="img" type="text" hidden="true" value="images/postal1.jpg" name="img"></input>
-        <input type="submit" class="col s12 m2 waves-effect waves-light btn"></input>    
+        <input type="submit" class="col s12 m2 waves-effect waves-light btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Clic para enviar la postal por correo"></input>    
     </form>
     <span class="obligatorio">* Campos obligatorios</span>
 </div>
 
             
         
-                    <div id="map"></div>
 
 
     <footer class="page-footer grey darken-4"role="contentinfo">

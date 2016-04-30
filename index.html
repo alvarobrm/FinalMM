@@ -39,12 +39,12 @@
     <div class="navbar-fixed" role="navigation">
         <nav>
             <div class="nav-wrapper grey darken-4 ">
-                <a href="index.html" class="brand-logo"><img class="logo" src="logo.png" alt="Logo de la web">
+                <a href="index.html" class="brand-logo tooltipped" data-position="bottom" data-delay="50" data-tooltip="Clic para ir a la página principal"><img class="logo" src="logo.png" alt="Logo de la web">
                 </a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
 
-                    <li class="waves-effect waves-green"><a href="#noscroll" id="mute" onclick="cambiar()"><i id="prueba" class="material-icons prefix">volume_up</i></a>
+                    <li class="waves-effect waves-green tooltipped" data-position="bottom" data-delay="50" data-tooltip="Clic para apagar/encender música de fondo"><a href="#noscroll" id="mute" onclick="cambiar()"><i id="prueba" class="material-icons prefix">volume_up</i></a>
                     </li>
                     
                     <li class="waves-effect waves-green tooltipped"><a href="visitar.html" class="btn tooltipped grey darken-4 menu" data-position="bottom" data-delay="50" data-tooltip="Clic para ver que sitios visitar">¿Qué visitar?</a>
@@ -68,8 +68,8 @@
         </nav>
     </div>
 
-    <audio id="background_audio" autoplay="loop">
-        <source src="omi.mp3" />
+    <audio id="background_audio" loop autoplay>
+        <source src="caribe.ogg" />
     </audio>
 
 
@@ -123,10 +123,10 @@
 
     <div class="row">
         <div class="col s8 offset-s2  offset-m4 offset-l5">
-            <a onclick="$('.slider').slider('prev');"><i class="material-icons medium sliderbt">skip_previous</i></a>
-            <a onclick="pause()"><i id="pausa" class="material-icons medium sliderbt">pause_circle_outline</i></a>
-            <a onclick="play()"> <i id="play" class="material-icons medium sliderbt" >play_circle_filled</i></a>
-            <a onclick="$('.slider').slider('next');"><i class="material-icons medium sliderbt">skip_next</i></a>
+            <a onclick="$('.slider').slider('prev');"><i class="material-icons medium sliderbt tooltipped" data-position="bottom" data-delay="50" data-tooltip="Clic para ver imagen anterior">skip_previous</i></a>
+            <a onclick="pause()"><i id="pausa" class="material-icons medium sliderbt tooltipped" data-position="bottom" data-delay="50" data-tooltip="Clic para parar la secuencia de imagenes">pause_circle_outline</i></a>
+            <a onclick="play()"> <i id="play" class="material-icons medium sliderbt tooltipped" data-position="bottom" data-delay="50" data-tooltip="Clic para rehabilitar la secuencia automática de imágenes" >play_circle_filled</i></a>
+            <a onclick="$('.slider').slider('next');"><i class="material-icons medium sliderbt tooltipped" data-position="bottom" data-delay="50" data-tooltip="Clic para ver siguiente imagen">skip_next</i></a>
         </div>
     </div>
     </div>
@@ -148,7 +148,7 @@
                             <p>Gandía es una ciudad viva, llena de cultura y de ocio, cuenta con cuatro discotecas reconocidas a nivel internacional, cuatro sitios donde pasar la noche bailando y de copas con tus amigos</p>
                         </div>
                         <div class="card-action">
-                            <a href="#modal1" class="modal-trigger"><u>VER MAS GRANDE</u></a>
+                            <a href="#modal1" class="modal-trigger tooltipped" data-position="bottom" data-delay="50" data-tooltip="Clic para ver la información mas grande"><u>VER MAS GRANDE</u></a>
                         </div>
                     </div>
                      </div>
@@ -163,7 +163,7 @@
                                     <p>Gandia cuenta con una gran seleccion de hoteles y restaurantes donde poder paliar nuestros sentidos culinarios. La fideuá es su mejor escaparate, envidiada en todo territorio nacional.</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#modal2" class="modal-trigger"><u>VER MAS GRANDE</u></a>
+                                    <a href="#modal2" class="modal-trigger tooltipped" data-position="bottom" data-delay="50" data-tooltip="Clic para ver la información mas grande"><u>VER MAS GRANDE</u></a>
                                 </div>
                             </div>
                         </div>
@@ -178,7 +178,7 @@
                                     <p> ¿Qué ofrece la playa de Gandia que otras playas no ofrecen? Gandia tiene más de 7 Km de playa divide en varios tramos.</p>
                                 </div>
                                 <div class="card-action">
-                                    <a href="#modal3" class="modal-trigger"><u>VER MAS GRANDE</u></a>
+                                    <a href="#modal3" class="modal-trigger tooltipped" data-position="bottom" data-delay="50" data-tooltip="Clic para ver la información mas grande"><u>VER MAS GRANDE</u></a>
                                 </div>
                             </div>
                         </div>
